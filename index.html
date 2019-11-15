@@ -69,12 +69,44 @@
 
         footer {
             background: #808B96;
-            color: #FFF;
+            color: #1C2833;
         }
 
         footer > div {
             padding: 120px 0 40px 0;
             margin: auto;
+        }
+
+        footer > div > article {
+            display: flex;
+            flex-direction: row;
+        }
+
+        footer > div > article > div {
+            flex-grow: 1;
+            width: calc(100% / 3);
+        }
+
+        footer > div > article > div > .head {
+            font-weight: bold;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        footer > div > article > div > ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        footer > div > article > div > ul > li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        footer > div > p {
+            text-align: center;
+            border-top: 2px solid #566573;
+            padding-top: 30px;
         }
         </style>
     </head>
@@ -104,13 +136,7 @@
             <div>
                 <article>
                     <div>
-                        <div class="head">สินค้าของเรา</div>
-                        <ul>
-                            <li><a href="">IOXGD4</a></li>
-                            <li><a href="">IOXGD Designer</a></li>
-                            <li><a href="">Arduino core for the IOXGD4</a>
-                            <li><a href="">อุปกรณ์เสริม</a></li>
-                        </ul>
+                        <img src="" alt="IOXGD logo white">
                     </div>
                     <div>
                         <div class="head">สินค้าของเรา</div>
@@ -120,6 +146,10 @@
                             <li><a href="">Arduino core for the IOXGD4</a>
                             <li><a href="">อุปกรณ์เสริม</a></li>
                         </ul>
+                    </div>
+                    <div>
+                        <div class="head">เกี่ยวกับเรา</div>
+                        <p>IOXGD เป็นแพลตฟอร์มจอ HMI ที่พัฒนาขึ้นเพื่อให้การใช้งานจอ HMI ทำได้ง่ายมากที่สุด ในราคาที่เหมาะสม และมีคุณภาพ เพื่อให้ฮาร์แวร์และซอฟแวร์ของเราสามารถนำไปใช้งานได้จริง ทั้งแต่งานสำหรับ Maker จนไปถึงการนำไปใช้งานในโรงงาน</p>
                     </div>
                 </article>
                 <p>Copyright &copy; 2017 <a href="https://www.ioxgd.com/">IOXGD</a>. All Rights Reserved.</p>
