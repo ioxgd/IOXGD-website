@@ -3,148 +3,261 @@
 <html>
     <head>
         <title>IOXGD - HMI development platform</title>
-        <style>
-        body, html {
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-        }
 
-        body {
-            color: #17202A;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+        <!-- CSS -->
+        <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/main.css">
 
-        header {
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            right: 0;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            background: #FFFFFF;
-        }
-        
-        header > nav {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        } 
-
-        header > nav > div {
-            flex-grow: 1;
-        }
-
-        header > nav > ul {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: row;
-        }
-
-        header > nav > ul > li {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }        
-
-        header > nav > ul > li > a {
-            padding: 20px;
-            font-size: 22px;
-            display: inline-block;
-            text-decoration: none;
-            color: #17202A;
-            transition: 300mS all;
-        }
-        
-        header > nav > ul > li > a:hover {
-            background: #239B56;
-            color: #FFF;
-        }
-
-        section > div, footer > div, header > nav {
-            width: 1080px;
-            margin: auto;
-        }
-
-        footer {
-            background: #808B96;
-            color: #1C2833;
-        }
-
-        footer > div {
-            padding: 120px 0 40px 0;
-            margin: auto;
-        }
-
-        footer > div > article {
-            display: flex;
-            flex-direction: row;
-        }
-
-        footer > div > article > div {
-            flex-grow: 1;
-            width: calc(100% / 3);
-        }
-
-        footer > div > article > div > .head {
-            font-weight: bold;
-            font-size: 22px;
-            margin-bottom: 10px;
-        }
-
-        footer > div > article > div > ul {
-            margin: 0;
-            padding: 0;
-        }
-
-        footer > div > article > div > ul > li {
-            list-style: none;
-            margin-bottom: 10px;
-        }
-
-        footer > div > p {
-            text-align: center;
-            border-top: 2px solid #566573;
-            padding-top: 30px;
-        }
-        </style>
+        <!-- JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
     </head>
 
     <body>
         <header>
             <nav>
                 <div class="logo">
-                    <img src="" alt="IOXGD logo">
+                    <img src="image/IOXGD logo 120x120.png" alt="IOXGD logo">
                 </div>
                 <ul>
-                    <li><a href="">แพลตฟอร์ม</a></li>
-                    <li><a href="">ฮาร์ดแวร์</a></li>
-                    <li><a href="">ซอฟแวร์</a></li>
-                    <li><a href="">เอกสาร</a></li>
+                    <li><a href="#platform"><span>แพลตฟอร์ม</span></a></li>
+                    <li><a href="#hardware"><span>ฮาร์ดแวร์</span></a></li>
+                    <li><a href="#software"><span>ซอฟแวร์</span></a></li>
+                    <li><a href="https://docs.ioxgd.com/" target="_blank"><span>เอกสาร</span></a></li>
                     <li><a href="https://www.facebook.com/groups/ioxgd/" target="_blank">ชุมชน</a></li>
                     <li><a href="">ติดต่อเรา</a></li>
                 </ul>
             </nav>
         </header>
 
-        <section>
+        <section id="platform">
+            <div>
+                <div class="header">
+                    <h1>แพลตฟอร์ม</h1>
+                    <hr />
+                </div>
+                <p class="sub-title">แพลตฟอร์มพัฒนาจอ HMI ที่มาพร้อมฮาร์ดแวร์ที่มีประสิทธิ์ภาพสูงสุด ซอฟแวร์ที่ใช้งานง่าย นำไปใช้งานได้จริง</p>
+                <div class="box-platform">
+                    <div>
+                        <div class="icon"><i class="far fa-grin"></i></div>
+                        <div class="msg">
+                            <h2>ง่ายต่อการพัฒนา</h2>
+                            <p>ด้วยฮาร์ดแวร์สำเร็จรูปที่นำไปพัฒนาต่อได้ง่าย ราคาสมเหตุสมผล</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="icon"><i class="fas fa-paint-brush"></i></i></div>
+                        <div class="msg">
+                            <h2>ออกแบบได้ทันใจ</h2>
+                            <p>ซอฟแวร์ออกแบบหน้าจอที่ใช้งานได้ง่าย และใช้ภาษาไทยได้!</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="icon"><i class="far fa-star"></i></div>
+                        <div class="msg">
+                            <h2>อุปกรณ์เกรดดี</h2>
+                            <p>เราเลือกใช้อุปกรณ์ที่เชื่อถือได้ ทำให้ฮาร์ดแวร์ของเรามีคุณภาพ</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="icon"><img src="image/arduino-icon.png" alt="arduino logo"></div>
+                        <div class="msg">
+                            <h2>ArduinoIDE</h2>
+                            <p>พัฒนาด้วย ArduinoIDE ที่ใช้ง่าย และมีชุมชนที่แข็งแกร่งมากที่สุด</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="hardware" style="background: #F7F9F9;">
+            <div>
+                <div class="header">
+                    <h1>บอร์ด IOXGD4</h1>
+                    <hr />
+                </div>
+                <div class="box">
+                    <div class="description">
+                        <ul>
+                            <li>หน้าจอขนาด 4 นิ้ว แบบ IPS ความละเอียด 800x480 พิกเซล (HD)</li>
+                            <li>ระบบสัมผัสแบบ Capacitive ความแม่นยำสูง</li>
+                            <li>หน่วยประมวลผล: K210 สถาปัยกรรม RISC-V 64 บิต 2 แกนสมอง ความเร็ว 400MHz</li>
+                            <li>หน่วยความจำ
+                                <ul>
+                                    <li>แรมขนาด 8MiB</li>
+                                    <li>รอมขนาด 16MiB</li>
+                                    <li>อีอีพรอมขนาด 4kiB</li>
+                                    <li>เสียบ MicroSD Card ได้</li>
+                                </ul>
+                            </li>
+                            <li>ใช้ไอซีนับเวลาความแม่นยำสูง DS3231</li>
+                            <li>ไอซีอัพโหลดโปรแกรม FT231X</li>
+                            <li>เชื่อมต่ออินเตอร์เน็ตผ่าน WiFi</li>
+                            <li>มี I/O จำนวน 8 ช่อง และช่องเสียบ KB Chain</li>
+                            <li>เขียนโปรแกรมด้วย ArduinoIDE</li>
+                        </ul>
+                    </div>
+                    <div class="box-image" style="text-align: center;">
+                        <img src="image/ioxgd4.png" style="max-width: 600px;" alt="">
+                        <a class="btn" href="https://www.ioxhop.com/" target="_blank" style="margin-top: 20px;"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;สั่งซื้อบอร์ด IOXGD4</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hardware">
+            <div>
+                <div class="header">
+                    <h1>ส่วนประกอบของบอร์ด IOXGD4</h1>
+                    <hr />
+                </div>
+                <div class="box-hardware">
+                    <div class="box-image">
+                        <img src="image/Board Cut.jpg" alt="">
+                        <div class="point active" data-point="1" style="left: 40%; top: 56%;"></div>
+                        <div class="point" data-point="2" style="left: 5%; top: 56%;"></div>
+                        <div class="point" data-point="3" style="left: 64%; top: 28%;"></div>
+                        <div class="point" data-point="4" style="left: 19%; top: 74%;"></div>
+                        <div class="point" data-point="5" style="left: 61%; top: 51%;"></div>
+                        <div class="point" data-point="6" style="left: 40%; top: 88%;"></div>
+                        <div class="point" data-point="7" style="left: 60%; top: 92%;"></div>
+                        <div class="point" data-point="8" style="left: 24%; top: 24%;"></div>
+                        <div class="point" data-point="9" style="left: 25.5%; top: 12%;"></div>
+                        <div class="point" data-point="10" style="left: 71%; top: 84%;"></div>
+                        <div class="point" data-point="11" style="left: 14.2%; top: 8.6%;"></div>
+                        <div class="point" data-point="12" style="left: 43%; top: 13.5%;"></div>
+                        <div class="point" data-point="13" style="left: 82.7%; top: 12.6%;"></div>
+                        <div class="point" data-point="14" style="left: 92%; top: 44%;"></div>
+                        <div class="point" data-point="15" style="left: 91%; top: 87%;"></div>
+                        <div class="point" data-point="16" style="left: 95%; top: 16.5%;"></div>
+                    </div>
+                    <div class="description" id="hardware-description1" style="display: block;">
+                        <h1>SiPEED M1</h1>
+                        <p>โมดูลไมโครคอนโทรลเลอร์ K210 ซีพียูสถาปัตยกรรม RISC-V 2 แกน ขนาด 64 บิต สัญญาณนาฬิกาสูงสุด 600 MHz มาพร้อมแรมขนาด 8 MiB และรอมขนาด 16 MiB กำหนดขาใช้งานได้อิสระด้วย FPIOA</p>
+                    </div>
+                    <div class="description" id="hardware-description2">
+                        <h1>20x2 LCD interface</h1>
+                        <p>Pin Header ขนาด 20x2 สำหรับเสียบจอ IPS ขนาด 4 นิ้ว พร้อมสัมผัสแบบ Capacitive สื่อสารกับไมโครคอนโทรลเลอร์ผ่าน 8080 interface ขนาด 8 บิต</p>
+                    </div>
+                    <div class="description" id="hardware-description3">
+                        <h1>ESP32 WiFi Module</h1>
+                        <p>โมดูลเชื่อมต่อ WiFi ไอซีเบอร์ ESP32 มาพร้อมเฟิร์มแวร์ที่รองรับโปรโตคอล TCP HTTP NTP ทำให้บอร์ดสามารถเชื่อมต่ออินเตอร์เน็ตได้</p>
+                    </div>
+                    <div class="description" id="hardware-description4">
+                        <h1>DS3231 RTC</h1>
+                        <p>ไอซีนับเวลาความเที่ยงตรงสูง เชื่อมต่อกับไมโครคอนโทรลเลอร์ผ่าน I<sub>2</sub>C</p>
+                    </div>
+                    <div class="description" id="hardware-description5">
+                        <h1>4 kB EEPROM</h1>
+                        <p>ไอซี EEPROM เก็บข้อมูลได้ 4 kB ใช้เก็บค่าคอนฟิกต่าง ๆ ของบอร์ด เชื่อมต่อกับไมโครคอนโทรลเลอร์ผ่าน I<sub>2</sub>C</p>
+                    </div>
+                    <div class="description" id="hardware-description6">
+                        <h1>MicroSD Card</h1>
+                        <p>ช่องเสียบ MicroCard สำหรับเพิ่มพื้นที่เก็บข้อมูล และใช้เก็บข้อมูลรูปภาพที่แสดงบนหน้าจอ</p>
+                    </div>
+                    <div class="description" id="hardware-description7">
+                        <h1>Buzzer</h1>
+                        <p>ลำโพงบัสเซอร์ ให้เสียงดังสูงสุดถึง 90 เดซิเบล</p>
+                    </div>
+                    <div class="description" id="hardware-description8">
+                        <h1>FT231 USB to UART</h1>
+                        <p>ไอซีอัพโหลดโปรแกรม FT231 เป็นไอซีคุณภาพสูงจากบริษัท FTDI ที่เชียวชาญด้านการผลิตไอซีแปลง USB เป็น UART</p>
+                    </div>
+                    <div class="description" id="hardware-description9">
+                        <h1>MicroUSB</h1>
+                        <p>ช่องเสียบ MicroUSB สำหรับเชื่อมต่อกับเครื่องคอมพิวเตอร์เพื่ออัพโหลดโปรแกรม</p>
+                    </div>
+                    <div class="description" id="hardware-description10">
+                        <h1>Switching Regulator</h1>
+                        <p>วงจรลดแรงดันไฟฟ้าระบบสวิทชิ่ง ใช้ลดแรงดันไฟฟ้าเหลือ 5V สำหรับจ่ายไฟเลี้ยงทั้งบอร์ด แลอุปกรณ์ต่อพ่วงเพิ่มเติม จ่ายกระแสได้สูงสุดถึง 5A</p>
+                    </div>
+                    <div class="description" id="hardware-description11">
+                        <h1>ปุ่มรีเซ็ตการทำงาน</h1>
+                        <p>ใช้กดเพื่อเริ่มต้นการทำงานของโปรแกรมใหม่ทั้งหมด</p>
+                    </div>
+                    <div class="description" id="hardware-description12">
+                        <h1>ช่องต่ออุปกรณ์ภายนอก</h1>
+                        <p>ใช้ต่ออุปกรณ์ภายนอกจำนวน 8 ช่อง รองรับคำสั่งอินพุต เอาต์พุต PWM SPI I<sub>2</sub>C UART และอื่น ๆ</p>
+                    </div>
+                    <div class="description" id="hardware-description13">
+                        <h1>KB Chain</h1>
+                        <p>ช่องต่ออุปกรณ์ภายนอกที่ใช้พอร์ตแบบ KB Chain หรือต่ออุปกรณ์ภายนอกที่ใช้การสื่อสารแบบ I2C</p>
+                    </div>
+                    <div class="description" id="hardware-description14">
+                        <h1>ปลั๊ก DC</h1>
+                        <p>ใช้เสียบอะแดปเตอร์หัวแจ๊ค DC ขนาด 5.5x2.1 มิลลิเมตร รองรับแรงดันไฟฟ้าได้ 7V ถึง 12V สำหรับจ่ายไฟเลี้ยงให้กับอุปกรณ์ทั้งบอร์ด และจ่ายอุปกรณ์อื่นที่ต่อพ่วงกับบอร์ด</p>
+                        <p><strong>แนะนำให้ใช้อะแดปเตอร์ที่จ่ายกระแสได้ไม่น้อยกว่า 1A</strong></p>
+                    </div>
+                    <div class="description" id="hardware-description15">
+                        <h1>ช่องต่อแหล่งจ่ายไฟภายนอก</h1>
+                        <p>ใช้ต่อกับแหล่งจ่ายไฟภายนอก รองรับแรงดันไฟฟ้าได้ 7V ถึง 12V สำหรับจ่ายไฟเลี้ยงให้กับอุปกรณ์ทั้งบอร์ด และจ่ายอุปกรณ์อื่นที่ต่อพ่วงกับบอร์ด</p>
+                        <p><strong>แนะนำให้ใช้แหล่งจ่ายไฟที่จ่ายกระแสได้ไม่น้อยกว่า 1A</strong></p>
+                    </div>
+                    <div class="description" id="hardware-description16">
+                        <h1>แอลอีดีแสดงสถานะ</h1>
+                        <p>หลอดแอลอีดีสีเขียว ใช้แสดงสถาะบอร์ดทำงาน (มีไฟฟ้าจ่าย)</p>
+                        <p>หลอดแอลอีดีสีส้ม ใช้แสดงสถานะการเชื่อมต่อ WiFi</p>
+                        <ul>
+                            <li>แอลอีดีสีส้มกระพริบ หมายถึง กำลังเชื่อมต่อ หรือรอเชื่อมต่อ WiFi</li>
+                            <li>แอลอีดีสีส้มติดสว่างค้าง หมายถึง เชื่อมต่อ WiFi แล้ว</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="software">
+            <div>
+                <div class="header">
+                    <h1>IOXGD Designer</h1>
+                    <hr />
+                </div>
+                <div class="sub-title">โปรแกรมออกแบบหน้าจอสำหรับบอร์ด IOXGD4 โดยเฉพาะ ด้วยเทคโนโลยี WYSIWYG มาพร้อมระบบซีมูเลชั่น จำลองสิ่งที่แสดงบนหน้าจอบนคอมพิวเตอร์ก่อน เพื่อให้ง่ายต่อการพัฒนา มีระบบจัดการฟอนต์ ทำให้ใช้ภาษาไทยได้ เมื่อพัฒนาแล้วสามารถ Export เป็นโค้ดโปรแกรมเพื่อนนำไปพัฒนาต่อบน ArduinoIDE ได้ทันที</div>
+                <div class="box-image">
+                    <img src="image/ioxgd-designer-screenshot.png" alt="" style="max-width: 800px;">
+                </div>
+                <p style="text-align: center;">
+                    <a href="https://github.com/ioxgd/IOXGD-Designer/releases" target="_blank">
+                        <img src="image/download-for-windows-button.png" alt="" width="200">
+                    </a>
+                </p>
+            </div>
+        </section>
+
+        <section id="arduino-ide">
+            <div>
+               <div class="header">
+                    <h1>พัฒนาโปรแกรมด้วย ArduinoIDE</h1>
+                    <hr />
+                </div>
+                <div class="box">
+                    <div class="box-image" style="flex-shrink: 0;">
+                        <img src="image/arduino-ide-screenshot.png" alt="" width="400">
+                    </div>
+                    <div class="description">
+                        <p>IOXGD4 มาพร้อมวงจรอัพโหลดโปรแกรม ทำให้สามารถพัฒนาโปรแกรมด้วย ArduinoIDE แล้วอัพโหลดโปรแกรมผ่านช่อง USB ได้ ทำให้ไม่ต้องต่อไมโครคอนโทรลเลอร์ภายนอกเพิ่มอีก ด้วยพลัง RISC-V 2 แกน 64 บิต สัญญาณนาฬิกา 400MHz ทำให้การพัฒนางานด้านการแสดงผลทำได้อย่างสบาย ๆ</p>
+                        <p>นอกจากนี้ยังมีไลบารี่ IOXGD เตรียมไว้ให้ด้วย ทำให้การใช้งานบัสเซอร์ โมดูลนับเวลา อีอีพรอม และการเชื่อมต่ออินเตอร์เน็ต ทำได้ง่ายมากยิ่งขึ้น</p>
+                        <p><a class="btn" href="/" target="_blank"><i class="fas fa-download"></i>&nbsp;&nbsp;ดาวน์โหลด Arduino core for the IOXGD4</a></p>
+                        <p><a class="btn" href="https://www.arduino.cc/en/Main/Software" target="_blank"><i class="fas fa-download"></i>&nbsp;&nbsp;ดาวน์โหลด ArduinoIDE</a></p>
+                    </div>
+                </div> 
+            </div>
         </section>
 
         <footer>
             <div>
                 <article>
                     <div>
-                        <img src="" alt="IOXGD logo white">
+                        <img src="image/IOXGD logo white 300x300.png" style="width: 130px;" alt="IOXGD logo white">
                     </div>
                     <div>
                         <div class="head">สินค้าของเรา</div>
                         <ul>
-                            <li><a href="">IOXGD4</a></li>
-                            <li><a href="">IOXGD Designer</a></li>
-                            <li><a href="">Arduino core for the IOXGD4</a>
-                            <li><a href="">อุปกรณ์เสริม</a></li>
+                            <li><a href="" target="_blank">IOXGD4</a></li>
+                            <li><a href="https://github.com/ioxgd/IOXGD-Designer" target="_blank">IOXGD Designer</a></li>
+                            <li><a href="" target="_blank">Arduino core for the IOXGD4</a>
+                            <li><a href="" target="_blank">อุปกรณ์เสริม</a></li>
                         </ul>
                     </div>
                     <div>
