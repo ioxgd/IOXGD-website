@@ -93,7 +93,7 @@ section {
 }
 
 section > div, footer > div, header > nav {
-    width: 1080px;
+    max-width: 1080px;
     margin: auto;
 }
 
@@ -155,6 +155,10 @@ footer > div > p {
     flex-basis: 720px;
     flex-shrink: 0;
     position: relative;
+}
+
+.box-hardware > .box-image > img {
+    display: block;
 }
 
 .box-hardware > .box-image > .point {
@@ -333,4 +337,71 @@ section .header > hr {
     color: #17202A;
     padding-left: 60px;
     padding-right: 0;
+}
+
+@media only screen and (max-width: 1080px) {
+    .box-platform {
+        flex-direction: column;
+    }
+
+    .box-platform > div {
+        width: auto;
+    }
+
+    .box-platform > div:hover {
+        transition: none;
+        transform: scale(1);
+        background: #FBFCFC;
+        color: #17202A;
+        box-shadow: none;
+    }
+
+    .box-platform > div:hover img {
+        filter: none;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+
+    .box > .box-image > img {
+        max-width: 100% !important;
+    }
+
+    .box-hardware {
+        flex-direction: column;
+    }
+
+    .box-hardware > .box-image {
+        width: 100%;
+        flex-basis: auto;
+        margin-bottom: 20px;
+    }
+
+    .box-hardware > .description {
+        margin-left: 0;
+    }
+
+    #software .box-image > img, #arduino-ide .box-image > img {
+        max-width: 100% !important;
+    }
+
+    #arduino-ide .description {
+        padding-left: 0;
+    }
+
+    footer > div > article {
+        flex-direction: column;
+    }
+
+    footer > div > article > div {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    header > nav > ul > li > a {
+        padding: 0 10px;
+        font-size: 16px;
+    }
 }
